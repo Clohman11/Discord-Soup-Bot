@@ -63,23 +63,24 @@ async def souphelp(ctx):
     helpEmbed.add_field(name='soupmeme', value='Soupbot will give an incredible soupy meme')
     await ctx.send(embed=helpEmbed)
 
-@client.command()
-async def crack(ctx):
-    try:
-        voice_channel = ctx.author.voice.channel
-    except:
-        voice_channel=None
+#@client.command()
+#async def crack(ctx):
+#    try:
+#        voice_channel = ctx.author.voice.channel
+#    except:
+#        voice_channel=None
     #if (client.is_connected()):#bot is already in a voice channel so dont crack
-    if voice_channel != None:
-        vc = await voice_channel.connect()
-        vc.play(discord.FFmpegPCMAudio(executable="D:/ffmpeg/ffmpeg-20200831-4a11a6f-win64-static/ffmpeg-20200831-4a11a6f-win64-static/bin/ffmpeg.exe", source="D:/Discord Soup Bot/SoupSounds/can-open-1.mp3"))
+#    if voice_channel != None:
+#        vc = await voice_channel.connect()
+
+#        vc.play(discord.FFmpegPCMAudio(executable="D:/ffmpeg/ffmpeg-20200831-4a11a6f-win64-static/ffmpeg-20200831-4a11a6f-win64-static/bin/ffmpeg.exe", source="D:/Discord Soup Bot/SoupSounds/can-open-1.mp3"))
         # Sleep while audio is playing.
-        while vc.is_playing():
-            time.sleep(1)
-            time.sleep(1)
-        await vc.disconnect()
-    else:
-        await ctx.send(str(ctx.author.name) + " is not in a channel.")
+#        while vc.is_playing():
+#            time.sleep(1)
+#            time.sleep(1)
+#        await vc.disconnect()
+#    else:
+#        await ctx.send(str(ctx.author.name) + " is not in a channel.")
     #else:
         #print('Bad Crack')
 
@@ -127,22 +128,22 @@ async def on_message(message):
 #------------------------------------------------------
 
 
-@client.command()
-async def notcrack(ctx):
-    try:
-        voice_channel = ctx.author.voice.channel
-    except:
-        voice_channel=None
+#@client.command()
+#async def notcrack(ctx):
+#    try:
+#        voice_channel = ctx.author.voice.channel
+#    except:
+#        voice_channel=None
     #if (client.is_connected()):#bot is already in a voice channel so dont crack
-    if voice_channel != None:
-        vc = await voice_channel.connect()
-        vc.play(discord.FFmpegPCMAudio(executable="D:/ffmpeg/ffmpeg-20200831-4a11a6f-win64-static/ffmpeg-20200831-4a11a6f-win64-static/bin/ffmpeg.exe", source="D:\Discord Soup Bot\SoupSounds\willYell.wav"))
+#    if voice_channel != None:
+#        vc = await voice_channel.connect()
+#        vc.play(discord.FFmpegPCMAudio(executable="D:/ffmpeg/ffmpeg-20200831-4a11a6f-win64-static/ffmpeg-20200831-4a11a6f-win64-static/bin/ffmpeg.exe", source="D:\Discord Soup Bot\SoupSounds\willYell.wav"))
         # Sleep while audio is playing.
-        while vc.is_playing():
-            time.sleep(4)
-        await vc.disconnect()
-    else:
-        await ctx.send(str(ctx.author.name) + " is not in a channel.")
+#        while vc.is_playing():
+#            time.sleep(4)
+#        await vc.disconnect()
+#    else:
+#        await ctx.send(str(ctx.author.name) + " is not in a channel.")
 
 
 
