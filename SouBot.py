@@ -158,4 +158,4 @@ async def notcrack(ctx):
 #        f'{guild.name}(id: {guild.id})'
 #        )
 
-client.run(os.getenv('TOKEN'))   #move token stuff to .env for public use
+client.run(os.getenv('DISCORD_TOKEN'))   #move token stuff to .env for public use
