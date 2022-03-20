@@ -111,7 +111,7 @@ async def randomsoup(ctx):
 async def soupmeme(ctx):
     rnum = random.randint(0,11)
     rnum = str(rnum)
-    memename = 'SoupMemes\\' + 'meme' + rnum + '.jpg'
+    memename = 'SoupMemes/' + 'meme' + rnum + '.jpg'
     await ctx.send(file=discord.File(memename))
 
 @client.event
