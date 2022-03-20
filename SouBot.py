@@ -59,7 +59,7 @@ async def souphelp(ctx):
     helpEmbed = discord.Embed(title='Command Help', url='https://www.google.com/search?q=soup&rlz=1C1CHBF_enUS702US702&sxsrf=AOaemvKctzyVgTdCkub-_vNKmHzbR9Zn0Q%3A1634872241981&ei=sStyYeOjO9KcwbkPr9iSwAM&ved=0ahUKEwijwPHZhd3zAhVSTjABHS-sBDgQ4dUDCA4&uact=5&oq=soup&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBAgjECcyEAgAEIAEEIcCELEDEMkDEBQyBQgAEJIDMgUIABCSAzIOCC4QgAQQsQMQxwEQowIyCAguEIAEELEDMggILhCABBCxAzILCC4QgAQQxwEQrwE6BwgjELADECc6BwgAEEcQsAM6CgguEMgDELADEENKBQg4EgExSgQIQRgAUJQQWJQQYIQZaAFwAngAgAF_iAF_kgEDMC4xmAEAoAEByAEPwAEB&sclient=gws-wiz',description = 'These are the avaliable commands for SoupBot', color = discord.Color.gold())
     helpEmbed.add_field(name='SOTD', value='Soupbot will tell you the soup of the day, based on the soup of the day from The CheeseCake Factory menu',inline=True)
     helpEmbed.add_field(name='randomsoup', value='Soupbot will give you a random soup with 3 ingredients',inline=True)
-    helpEmbed.add_field(name='crack', value='Soupbot will enter your voice channel and loudly crack open a can(of soup?)',inline=True)
+    helpEmbed.add_field(name='crack', value='Soupbot will enter your voice channel and loudly crack open a can(of soup?). (DISABLED)',inline=True)
     helpEmbed.add_field(name='soupmeme', value='Soupbot will give an incredible soupy meme')
     await ctx.send(embed=helpEmbed)
 
