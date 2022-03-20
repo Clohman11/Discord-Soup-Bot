@@ -1,0 +1,22 @@
+Chicken
+Beef
+Carrot
+Onion
+Potato
+Squash
+Clam
+Broccoli
+Cheese
+Noodle
+Beet
+Beans
+Tomato
+Celery
+Bacon
+Crawfish
+Shrimp
+Bell Pepper
+Hot Pepper
+Ham
+Mushroom
+Peas
